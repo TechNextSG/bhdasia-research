@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HummingBeing — Full Report</title>
+<style>
+  :root{--c:#1f9e8f;--c2:#16887a;--cl:#e6f6f3;--ink:#1d2330;--muted:#5b6677;--line:#e3e7ee;--bg:#f5f7fa;--good:#1f9e5a;--warn:#c9810a;--bad:#c2412d}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:15px}
+  a{color:var(--c2);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+  nav.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+  nav.top .wrap{display:flex;flex-wrap:wrap;gap:6px;padding:10px 22px;align-items:center}
+  nav.top a{font-size:13px;font-weight:600;color:var(--muted);padding:7px 11px;border-radius:7px}
+  nav.top a:hover{background:var(--bg);text-decoration:none;color:var(--ink)}
+  nav.top a.active{background:var(--cl);color:var(--c2)}
+  nav.top .home{margin-right:auto;font-weight:800;color:var(--ink)}
+  header.hero{background:linear-gradient(120deg,var(--c2),var(--c));color:#fff;padding:46px 0 40px}
+  header.hero .label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;opacity:.85}
+  header.hero h1{font-size:32px;margin:6px 0;letter-spacing:-.4px}
+  header.hero .url a{color:#fff;text-decoration:underline;font-size:14px}
+  header.hero .tag{margin-top:10px;font-style:italic;opacity:.95}
+  section{background:#fff;border:1px solid var(--line);border-radius:14px;margin:22px 0;padding:24px 28px}
+  section h2{font-size:21px;margin-bottom:14px;display:flex;align-items:center;gap:9px;border-bottom:2px solid var(--cl);padding-bottom:10px}
+  h3{font-size:15px;margin:14px 0 6px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+  .grid{display:grid;gap:18px}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr 1fr}
+  @media(max-width:800px){.g2,.g3{grid-template-columns:1fr}}
+  ul.tick{list-style:none}ul.tick li{padding:3px 0 3px 22px;position:relative}ul.tick li::before{content:"›";position:absolute;left:4px;color:var(--c);font-weight:700}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin:6px 0}
+  th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--bg);font-size:11.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+  td.k{font-weight:600;width:30%}
+  dl.kv{display:grid;grid-template-columns:150px 1fr;gap:6px 14px;font-size:14px}dl.kv dt{font-weight:600;color:var(--muted)}
+  .badge{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px}
+  .b-good{background:#e3f6ec;color:var(--good)}.b-warn{background:#fbf0db;color:var(--warn)}.b-bad{background:#f9e3df;color:var(--bad)}.b-neutral{background:#eceff3;color:var(--muted)}
+  .quote{font-style:italic;color:#33414f;border-left:3px solid var(--c);padding:4px 0 4px 14px;margin:8px 0}
+  .note{background:var(--bg);border-left:3px solid var(--muted);padding:11px 14px;border-radius:0 8px 8px 0;font-size:13.5px;color:var(--muted);margin-top:12px}
+  .plat{display:grid;grid-template-columns:44px 1fr;gap:13px;align-items:start;padding:13px 0;border-bottom:1px dashed var(--line)}.plat:last-child{border-bottom:none}
+  .plat .logo{width:44px;height:44px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:17px}
+  .plat .name{font-weight:700;font-size:14.5px}.plat .handle{color:var(--muted);font-size:12.5px;word-break:break-all}.plat .desc{font-size:13px;margin-top:4px}
+  .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--muted);margin-bottom:10px}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .dot{width:10px;height:10px;border-radius:50%}
+  footer{color:#7a8694;font-size:12.5px;margin:30px 0;line-height:1.7}
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="home" href="index.html">⌂ Intelligence Report</a>
+  <a href="summary.html">📊 Strategy</a>
+  <a class="active" href="hummingbeing.html">🐦 HummingBeing</a>
+  <a href="bhd-asia.html">🏢 BHD Asia</a>
+  <a href="partage-consulting.html">🦉 Partage</a>
+  <a href="isabelle-linkedin.html">👤 Isabelle</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="label">Website 1 · Somatic Wellness Brand</div>
+  <h1>🐦 HummingBeing</h1>
+  <div class="url"><a href="https://www.hummingbeing.com/">www.hummingbeing.com</a></div>
+  <div class="tag">“Release | Renew | Restore”</div>
+</div></header>
+
+<div class="wrap">
+
+  <section>
+    <h2>🧭 Identity &amp; Mission</h2>
+    <dl class="kv">
+      <dt>Brand name</dt><dd>HummingBeing</dd>
+      <dt>Tagline</dt><dd>Release · Renew · Restore</dd>
+      <dt>Mission</dt><dd>Help individuals release stress, trauma &amp; tension through natural nervous-system regulation — becoming resilient and revitalised.</dd>
+      <dt>Brand metaphor</dt><dd>The hummingbird flaps ~200×/minute; this vibration / “natural shaking” mirrors how the body regulates its own nervous system.</dd>
+      <dt>Affiliation</dt><dd>Footer: <strong>“Empowering Individuals | BHD Asia &amp; BHD Japan | All rights reserved”</strong> — a sub-brand of BHD.</dd>
+      <dt>Practitioner</dt><dd>Isabelle — internationally TRE®-certified; 50+ sessions delivered at capture.</dd>
+      <dt>Navigation</dt><dd>About · Isabelle · TRE · Somatic Coaching · Somatic Bodywork · Bookings</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>🛠️ Services (full detail)</h2>
+    <div class="grid g3">
+      <div>
+        <h3 style="color:var(--c)">🌀 TRE®</h3>
+        <p style="font-size:13px">Exercises activate the <strong>psoas muscles</strong> to trigger involuntary <strong>neurogenic tremors</strong> that discharge deep tension — drawing on psychology, neurology &amp; physiology. Created by <strong>Dr. David Berceli</strong>.</p>
+        <ul class="tick" style="font-size:12.5px;margin-top:6px">
+          <li>Lie on a mat, simple exercises → natural shaking</li>
+          <li>Training: 3–4 supervised sessions then self-practice</li>
+          <li>“Moderation, not intensity” — overuse → restlessness</li>
+          <li>Widespread in US/Europe; emerging in Asia</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="color:var(--c)">🧠 Somatic Coaching</h3>
+        <p style="font-size:13px">Targeted questioning to develop <strong>embodied intelligence</strong> — the body’s wisdom. “Understanding is insufficient… learned through experience and practice.”</p>
+        <ul class="tick" style="font-size:12.5px;margin-top:6px">
+          <li>For: burnout, emotional numbness, chronic tension</li>
+          <li>Commitment: 6–12+ sessions, practice between</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="color:var(--c)">🤲 Somatic Bodywork</h3>
+        <p style="font-size:13px">The <strong>Strozzi</strong> method — a gentle, systematic process to release historical patterns, contractions &amp; tension. “Soma” = the living body in its wholeness.</p>
+        <ul class="tick" style="font-size:12.5px;margin-top:6px">
+          <li>Props: gymnastic balls, soft balls, elastic bands</li>
+          <li>Clients become “living scientists” of their balance</li>
+        </ul>
+      </div>
+    </div>
+    <h3>Benefits cited across pages</h3>
+    <p style="font-size:13.5px;color:var(--muted)">Emotional resilience · reduced workplace stress · more energy · fewer relationship conflicts · less worry/anxiety · better sleep · less muscle/back pain · greater flexibility · healed injuries · reduced PTSD symptoms · burnout recovery · mind-body-soul integration.</p>
+  </section>
+
+  <section>
+    <h2>💬 Testimonials &amp; 🛎️ Booking</h2>
+    <div class="quote">“I am less anxious.” · “I feel more grounded.” · “I slept so well.”</div>
+    <div class="grid g2" style="margin-top:12px">
+      <dl class="kv">
+        <dt>Venue</dt><dd>Core Collective (Singapore) — changing rooms on-site</dd>
+        <dt>How to book</dt><dd>Contact form (email, name, phone, preferred date) + WhatsApp; no live calendar</dd>
+        <dt>Prep</dt><dd>Long pants, comfy t-shirt, bring socks, arrive 10 min early</dd>
+      </dl>
+      <dl class="kv">
+        <dt>Contraindications</dt><dd>Not for pregnant women or people with severe heart / blood-pressure issues</dd>
+        <dt>Pricing</dt><dd><span class="badge b-warn">Not published on site</span></dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ===================== DIGITAL STANDING ===================== -->
+  <section style="border-top:5px solid var(--c)">
+    <h2>📡 Current standing in the digital space</h2>
+    <p style="color:var(--muted);font-size:14px;margin-bottom:14px">HummingBeing has <strong>no dedicated social accounts of its own</strong>. As a sub-brand of BHD, its reach piggybacks on Isabelle’s personal channels and event-ticketing platforms. Below is everything found that carries the HummingBeing brand.</p>
+    <div class="legend">
+      <span><span class="dot" style="background:var(--good)"></span>Verified number</span>
+      <span><span class="dot" style="background:var(--warn)"></span>Login-gated / not retrievable</span>
+      <span><span class="dot" style="background:var(--bad)"></span>Absent / not found</span>
+    </div>
+
+    <div class="plat">
+      <div class="logo" style="background:var(--c)">🌐</div>
+      <div><div class="name">Website <span class="badge b-good">Live</span></div><div class="handle">hummingbeing.com</div>
+      <div class="desc">Clean 6-page brochure site. <strong>No blog, no articles feed, no dated content</strong> — zero content-marketing engine. Only conversion path is the booking enquiry form.</div></div>
+    </div>
+    <div class="plat">
+      <div class="logo" style="background:#25d366">✆</div>
+      <div><div class="name">WhatsApp <span class="badge b-neutral">Primary contact</span></div><div class="handle">click-to-chat on site</div>
+      <div class="desc">The only direct contact channel exposed — no public email, phone or address. All enquiries funnel here.</div></div>
+    </div>
+    <div class="plat">
+      <div class="logo" style="background:#f25022">P</div>
+      <div><div class="name">Peatix (event ticketing) <span class="badge b-good">1 follower</span></div><div class="handle">peatix.com/us/user/4855126</div>
+      <div class="desc"><strong>Verified.</strong> Organizer profile explicitly names “Humming Being” &amp; BHD; tied to a “Tension Release Exercises” community. Bio: Mindfulness Teacher (UK College of Mindful Meditation), PCC (ICF, 12+ yrs), TRE provider (TRE for All Inc.). Used to ticket TRE workshops — but only <strong>1 follower</strong>, no upcoming events listed.</div></div>
+    </div>
+    <div class="plat">
+      <div class="logo" style="background:#ff0000">▶</div>
+      <div><div class="name">YouTube (shared, personal) <span class="badge b-warn">Gated</span></div><div class="handle">@IsabelleClausTeixeira</div>
+      <div class="desc">Not HummingBeing-branded, but its channel tagline — “shake off your stress … TRE, Somatic Coaching and bodywork” — markets exactly HummingBeing’s services. Subscriber/video counts are login-gated; the channel appears lightly populated.</div></div>
+    </div>
+    <div class="plat">
+      <div class="logo" style="background:#9aa6b2">∅</div>
+      <div><div class="name">Dedicated Instagram / Facebook / X <span class="badge b-bad">None found</span></div>
+      <div class="desc">Extensive searching surfaced <strong>no HummingBeing-branded</strong> Instagram, Facebook or X/Twitter account. The brand has no independent social identity; consumers are expected to find it via the website or BHD.</div></div>
+    </div>
+
+    <h3 style="margin-top:18px">Assessment — HummingBeing</h3>
+    <div class="grid g3">
+      <div><b style="color:var(--good);font-size:13px">✅ Strengths</b>
+        <ul class="tick" style="font-size:12.5px"><li>Clear, focused brand &amp; niche</li><li>Credible practitioner credentials</li><li>Physical venue (Core Collective)</li></ul></div>
+      <div><b style="color:var(--warn);font-size:13px">⚠️ Gaps</b>
+        <ul class="tick" style="font-size:12.5px"><li>Zero owned social presence</li><li>No blog / SEO content</li><li>No pricing transparency</li><li>Peatix essentially dormant (1 follower)</li></ul></div>
+      <div><b style="color:var(--c2);font-size:13px">💡 Opportunities</b>
+        <ul class="tick" style="font-size:12.5px"><li>Launch a HummingBeing IG (TRE clips)</li><li>Add a blog for somatic-wellness SEO</li><li>Promote Peatix events on LinkedIn</li></ul></div>
+    </div>
+    <div class="note"><strong>Pages scanned:</strong> <a href="https://www.hummingbeing.com/">home</a>, /isabelle/, /tre/, /somatic-coaching/, /somatic-bodywork/, /bookings/. Peatix organizer profile verified live.</div>
+  </section>
+
+  <footer>Compiled 4 June 2026 with Opus 4.8. “Gated” = the platform requires login to show counts, so exact follower/post numbers could not be verified and are not estimated here. Quotes &amp; claims reproduced as publicly stated.</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BHD Asia — Full Report</title>
+<style>
+  :root{--c:#2b5d8c;--c2:#234f76;--cl:#e7f0f8;--ink:#1d2330;--muted:#5b6677;--line:#e3e7ee;--bg:#f5f7fa;--good:#1f9e5a;--warn:#c9810a;--bad:#c2412d}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:15px}
+  a{color:var(--c);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+  nav.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+  nav.top .wrap{display:flex;flex-wrap:wrap;gap:6px;padding:10px 22px;align-items:center}
+  nav.top a{font-size:13px;font-weight:600;color:var(--muted);padding:7px 11px;border-radius:7px}
+  nav.top a:hover{background:var(--bg);text-decoration:none;color:var(--ink)}
+  nav.top a.active{background:var(--cl);color:var(--c)}
+  nav.top .home{margin-right:auto;font-weight:800;color:var(--ink)}
+  header.hero{background:linear-gradient(120deg,var(--c2),var(--c));color:#fff;padding:46px 0 40px}
+  header.hero .label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;opacity:.85}
+  header.hero h1{font-size:32px;margin:6px 0;letter-spacing:-.4px}
+  header.hero .url a{color:#fff;text-decoration:underline;font-size:14px}
+  header.hero .tag{margin-top:10px;font-style:italic;opacity:.95}
+  section{background:#fff;border:1px solid var(--line);border-radius:14px;margin:22px 0;padding:24px 28px}
+  section h2{font-size:21px;margin-bottom:14px;display:flex;align-items:center;gap:9px;border-bottom:2px solid var(--cl);padding-bottom:10px}
+  h3{font-size:15px;margin:14px 0 6px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+  .grid{display:grid;gap:18px}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr 1fr}
+  @media(max-width:800px){.g2,.g3{grid-template-columns:1fr}}
+  ul.tick{list-style:none}ul.tick li{padding:3px 0 3px 22px;position:relative}ul.tick li::before{content:"›";position:absolute;left:4px;color:var(--c);font-weight:700}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin:6px 0}
+  th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--bg);font-size:11.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+  td.k{font-weight:600;width:30%}
+  dl.kv{display:grid;grid-template-columns:150px 1fr;gap:6px 14px;font-size:14px}dl.kv dt{font-weight:600;color:var(--muted)}
+  .badge{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px}
+  .b-good{background:#e3f6ec;color:var(--good)}.b-warn{background:#fbf0db;color:var(--warn)}.b-bad{background:#f9e3df;color:var(--bad)}.b-neutral{background:#eceff3;color:var(--muted)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:var(--cl);border:1px solid #cfe0f0;color:var(--c);padding:5px 12px;border-radius:20px;font-size:13px}
+  .note{background:var(--bg);border-left:3px solid var(--muted);padding:11px 14px;border-radius:0 8px 8px 0;font-size:13.5px;color:var(--muted);margin-top:12px}
+  .plat{display:grid;grid-template-columns:44px 1fr;gap:13px;align-items:start;padding:13px 0;border-bottom:1px dashed var(--line)}.plat:last-child{border-bottom:none}
+  .plat .logo{width:44px;height:44px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:17px}
+  .plat .name{font-weight:700;font-size:14.5px}.plat .handle{color:var(--muted);font-size:12.5px;word-break:break-all}.plat .desc{font-size:13px;margin-top:4px}
+  .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--muted);margin-bottom:10px}
+  .legend span{display:inline-flex;align-items:center;gap:6px}.dot{width:10px;height:10px;border-radius:50%}
+  .statbox{display:flex;gap:14px;flex-wrap:wrap;margin:6px 0 14px}
+  .statbox .b{background:var(--bg);border-radius:10px;padding:12px 16px;flex:1;min-width:110px;text-align:center}
+  .statbox .b b{display:block;font-size:22px}.statbox .b span{font-size:11.5px;color:var(--muted)}
+  footer{color:#7a8694;font-size:12.5px;margin:30px 0;line-height:1.7}
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="home" href="index.html">⌂ Intelligence Report</a>
+  <a href="summary.html">📊 Strategy</a>
+  <a href="hummingbeing.html">🐦 HummingBeing</a>
+  <a class="active" href="bhd-asia.html">🏢 BHD Asia</a>
+  <a href="partage-consulting.html">🦉 Partage</a>
+  <a href="isabelle-linkedin.html">👤 Isabelle</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="label">Website 2 · B2B Leadership &amp; HR Consultancy</div>
+  <h1>🏢 BHD Asia</h1>
+  <div class="url"><a href="https://bhdasia.com/">bhdasia.com</a></div>
+  <div class="tag">“Honor, strengthen and leverage your Humanity and show up at your best.”</div>
+</div></header>
+
+<div class="wrap">
+
+  <section>
+    <h2>🏛️ Company Facts</h2>
+    <dl class="kv">
+      <dt>Legal name</dt><dd>Business &amp; Human Development Consulting Pte Ltd (BHD Asia)</dd>
+      <dt>Founded</dt><dd>2012, Singapore — by Isabelle Claus Teixeira &amp; Rouviere Teixeira</dd>
+      <dt>Type</dt><dd>Boutique leadership coaching &amp; development; also French-language consulting</dd>
+      <dt>ACRA No.</dt><dd>201201974K</dd>
+      <dt>Address</dt><dd>50 Raffles Place, Singapore Land Tower #30-00, Singapore 048623</dd>
+      <dt>Phone</dt><dd>+81 80 6515 1778</dd>
+      <dt>Email</dt><dd>isabelle@bhdasia.com</dd>
+      <dt>Site structure</dt><dd>Home · About Us · Events · Partners · Services · Privacy · Terms · Code of Practice · Inclusivity Statement · Contact</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>🎯 Mission, Values &amp; Team</h2>
+    <p style="font-size:14px"><strong>Mission:</strong> co-create bespoke business &amp; HR solutions through a collaborative process; be “an international, competent, professional and caring business partner.”</p>
+    <div class="grid g2" style="margin-top:10px">
+      <div><h3>Core values</h3>
+        <ul class="tick" style="font-size:13.5px"><li><strong>Human-centred</strong> — psychological safety &amp; courage</li><li><strong>Collaborative win-win</strong> — knowledge transfer for client independence</li><li><strong>Diversity</strong> of thought, approach &amp; methodology</li><li><strong>Integrity &amp; transparency</strong></li></ul></div>
+      <div><h3>Methodology</h3>
+        <ul class="tick" style="font-size:13.5px"><li>Customised, co-designed (not off-the-shelf)</li><li>Diagnostic built into every engagement</li><li>Flexible, virtual, borderless delivery</li><li>“Collaboration versus competition”</li></ul></div>
+    </div>
+    <h3>Leadership team</h3>
+    <table>
+      <tr><th>Name</th><th>Role &amp; detail</th></tr>
+      <tr><td class="k">Isabelle Claus Teixeira</td><td>Co-Founder &amp; Director — 27+ yrs senior HR; certified leadership coach since 2012</td></tr>
+      <tr><td class="k">Rouviere Teixeira</td><td>Co-Founder &amp; Director — lead trainer, “Languages à Gogo” (French instruction)</td></tr>
+      <tr><td class="k">Clement Koh</td><td>Singapore Representative Director — business/tech &amp; data-driven human optimisation</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>🛠️ Services</h2>
+    <div class="grid g3">
+      <div><h3>Individual</h3><ul class="tick" style="font-size:13px"><li>Executive Coaching</li><li>Transition Coaching</li><li>Performance Coaching</li><li>Career Coaching</li><li>Self-Awareness Development</li><li>360 Debrief</li></ul></div>
+      <div><h3>Resilience &amp; presence</h3><ul class="tick" style="font-size:13px"><li>Somatic Coaching (neuroscience + energy psychology)</li><li>TRE — psoas-targeted release without recounting trauma</li></ul></div>
+      <div><h3>Organisational</h3><ul class="tick" style="font-size:13px"><li>HR &amp; Talent Management advisory</li><li>High-performing teams</li><li>Challenging conversations / conflict</li><li>Leadership skills development</li><li>Culture transformation</li><li>Change management · Mediation</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🏷️ Pricing, Events &amp; Clients</h2>
+    <table>
+      <tr><th>Offer</th><th>Dates / detail</th><th>Price</th></tr>
+      <tr><td class="k">8-Week Coaching Package</td><td>—</td><td><strong>$2,200</strong></td></tr>
+      <tr><td class="k">TRE® for Personal Use (Module 1)</td><td>29–30 Aug 2026, Singapore, 10am–6pm</td><td>1,290 / 1,500 / 1,800 SGD</td></tr>
+      <tr><td class="k">TRE® Certification (Module 2)</td><td>26–27 Sep 2026, Singapore; must pair with Module 3</td><td>3,699 / 4,200 / 4,500 SGD</td></tr>
+    </table>
+    <h3>Named client portfolio</h3>
+    <div class="chips">
+      <span class="chip">ByteDance (TikTok)</span><span class="chip">Novartis</span><span class="chip">Zimmer Biomet</span>
+      <span class="chip">Heineken</span><span class="chip">VISA</span><span class="chip">Mastercard</span>
+      <span class="chip">UWC SEA</span><span class="chip">EtonHouse International</span>
+    </div>
+  </section>
+
+  <!-- ===================== DIGITAL STANDING ===================== -->
+  <section style="border-top:5px solid var(--c)">
+    <h2>📡 Current standing in the digital space</h2>
+    <p style="color:var(--muted);font-size:14px;margin-bottom:8px">BHD Asia is the only one of the three businesses with a <strong>verifiable owned social account</strong> — a LinkedIn company page. The numbers are small: this is a boutique consultancy that wins work through referrals, authority bylines &amp; the founder’s network, not social reach.</p>
+    <div class="statbox">
+      <div class="b"><b style="color:var(--c)">22</b><span>LinkedIn followers (verified)</span></div>
+      <div class="b"><b style="color:var(--c)">11–50</b><span>employees (2 visible)</span></div>
+      <div class="b"><b style="color:var(--c)">2012</b><span>established</span></div>
+      <div class="b"><b style="color:var(--c)">0</b><span>blog posts / news feed</span></div>
+    </div>
+    <div class="legend">
+      <span><span class="dot" style="background:var(--good)"></span>Verified number</span>
+      <span><span class="dot" style="background:var(--warn)"></span>Login-gated / not retrievable</span>
+      <span><span class="dot" style="background:var(--bad)"></span>Absent / not found</span>
+    </div>
+
+    <div class="plat">
+      <div class="logo" style="background:#0a66c2">in</div>
+      <div><div class="name">LinkedIn — Company Page <span class="badge b-good">22 followers (verified)</span></div><div class="handle">linkedin.com/company/bhd-asia</div>
+      <div class="desc"><strong>Verified live.</strong> Industry: <em>Human Resources Services</em>. HQ: Singapore. Size: 11–50 employees (2 currently visible). Specialties listed (with typos): “Executive Coaching, Business Developement, Human Development, and Team Intevention.” About text describes 2012 founding, operations across Asia &amp; Japan. A nascent, under-maintained page.</div></div>
+    </div>
+    <div class="plat">
+      <div class="logo" style="background:linear-gradient(45deg,#f09433,#dc2743,#bc1888)">ig</div>
+      <div><div class="name">Instagram <span class="badge b-warn">Exists · counts gated</span></div><div class="handle">@isabelleclausteixeira_bhd</div>
+      <div class="desc">The BHD-branded handle (“_bhd” suffix). Profile is live but Instagram walls follower/post counts behind login, and the handle did not surface in public follower-ranking indexes — strongly implying a <strong>small following</strong>. Functions as the founder’s BHD-facing visual feed.</div></div>
+    </div>
+    <div class="plat">
+      <div class="logo" style="background:var(--c)">🎙</div>
+      <div><div class="name">“Getting to know Isabelle” interview <span class="badge b-neutral">Featured content</span></div><div class="handle">hosted on bhdasia.com (via Noomii)</div>
+      <div class="desc">Long-form interview used as social proof / thought-leadership on the homepage.</div></div>
+    </div>
+    <div class="plat">
+      <div class="logo" style="background:#1d3a5f">🗣</div>
+      <div><div class="name">ACCJ speaking engagement <span class="badge b-good">Verified event</span></div><div class="handle">accj.or.jp · 29 Jul 2020</div>
+      <div class="desc"><strong>Verified.</strong> Isabelle presented a virtual American Chamber of Commerce in Japan webinar — “Building an engaged and healthy team … COVID-19 &amp; unconscious bias” — exactly the corporate/team audience BHD targets. Demonstrates B2B credibility &amp; reach into chambers of commerce.</div></div>
+    </div>
+    <div class="plat">
+      <div class="logo" style="background:#9aa6b2">∅</div>
+      <div><div class="name">Facebook / X / YouTube (BHD-branded) <span class="badge b-bad">None found</span></div>
+      <div class="desc">No BHD-branded Facebook page, X/Twitter or YouTube channel located. The website itself has <strong>no blog or news feed</strong> despite an “Events” section.</div></div>
+    </div>
+
+    <h3 style="margin-top:18px">Assessment — BHD Asia</h3>
+    <div class="grid g3">
+      <div><b style="color:var(--good);font-size:13px">✅ Strengths</b>
+        <ul class="tick" style="font-size:12.5px"><li>Blue-chip client logos = strong proof</li><li>Verified, registered legal entity</li><li>Most complete website of the three</li><li>Real B2B event/speaking footprint</li></ul></div>
+      <div><b style="color:var(--warn);font-size:13px">⚠️ Gaps</b>
+        <ul class="tick" style="font-size:12.5px"><li>LinkedIn page only 22 followers</li><li>Typos in LinkedIn specialties</li><li>No blog / thought-leadership feed</li><li>Instagram low-volume &amp; gated</li></ul></div>
+      <div><b style="color:var(--c);font-size:13px">💡 Opportunities</b>
+        <ul class="tick" style="font-size:12.5px"><li>Grow LinkedIn co. page (employee advocacy)</li><li>Republish Forbes/Brainz articles here</li><li>Turn client wins into case studies</li><li>Fix specialty typos</li></ul></div>
+    </div>
+    <div class="note"><strong>Pages scanned:</strong> <a href="https://bhdasia.com/">home</a>, <a href="https://bhdasia.com/about-us/">/about-us/</a>, <a href="https://bhdasia.com/services/">/services/</a>, <a href="https://bhdasia.com/events/">/events/</a>, <a href="https://bhdasia.com/isabelle-claus-teixeira/">/isabelle-claus-teixeira/</a>. LinkedIn company page &amp; ACCJ event verified live; /partners/ returned 404.</div>
+  </section>
+
+  <footer>Compiled 4 June 2026 with Opus 4.8. The 22-follower LinkedIn figure was read directly from the live company page. “Gated” platforms wall their counts behind login; those numbers are not estimated.</footer>
+</div>
+</body>
+</html>

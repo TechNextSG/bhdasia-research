@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summary &amp; Digital Marketing Strategy — Real Talk</title>
+<style>
+  :root{--c:#6d28d9;--c2:#4c1d95;--cl:#efe9fb;--ink:#1d2330;--muted:#5b6677;--line:#e3e7ee;--bg:#f5f7fa;--good:#1f9e5a;--warn:#c9810a;--bad:#c2412d}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:15px}
+  a{color:var(--c);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+  nav.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+  nav.top .wrap{display:flex;flex-wrap:wrap;gap:6px;padding:10px 22px;align-items:center}
+  nav.top a{font-size:13px;font-weight:600;color:var(--muted);padding:7px 11px;border-radius:7px}
+  nav.top a:hover{background:var(--bg);text-decoration:none;color:var(--ink)}
+  nav.top a.active{background:var(--cl);color:var(--c)}
+  nav.top .home{margin-right:auto;font-weight:800;color:var(--ink)}
+  header.hero{background:linear-gradient(120deg,#2a0f57,var(--c2) 55%,var(--c));color:#fff;padding:50px 0 44px}
+  header.hero .label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;opacity:.85}
+  header.hero h1{font-size:33px;margin:6px 0 10px;letter-spacing:-.5px}
+  header.hero p{opacity:.93;max-width:780px;font-size:16px}
+  section{background:#fff;border:1px solid var(--line);border-radius:14px;margin:22px 0;padding:24px 28px}
+  section h2{font-size:22px;margin-bottom:14px;display:flex;align-items:center;gap:9px;border-bottom:2px solid var(--cl);padding-bottom:10px}
+  h3{font-size:15px;margin:14px 0 6px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+  .grid{display:grid;gap:18px}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr 1fr}
+  @media(max-width:800px){.g2,.g3{grid-template-columns:1fr}}
+  ul.tick{list-style:none}ul.tick li{padding:4px 0 4px 22px;position:relative}ul.tick li::before{content:"›";position:absolute;left:4px;color:var(--c);font-weight:700}
+  ul.x li::before{content:"✕";color:var(--bad);font-size:12px;left:2px}
+  ul.fix li::before{content:"➜";color:var(--good)}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin:6px 0}
+  th,td{text-align:left;padding:10px 11px;border-bottom:1px solid var(--line);vertical-align:middle}
+  th{background:var(--bg);font-size:11.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+  .grade{display:inline-block;font-weight:800;font-size:13px;padding:3px 10px;border-radius:8px;color:#fff;min-width:34px;text-align:center}
+  .g-a{background:#1f9e5a}.g-b{background:#5aa02c}.g-c{background:#c9810a}.g-d{background:#d9663a}.g-f{background:#c2412d}
+  .realtalk{background:linear-gradient(120deg,#2a0f57,#4c1d95);color:#fff;border-radius:14px;padding:24px 28px;margin:22px 0}
+  .realtalk h2{color:#fff;border-bottom:2px solid rgba(255,255,255,.25)}
+  .realtalk p{font-size:15.5px;margin-bottom:10px;opacity:.96}
+  .realtalk strong{color:#ffd9a8}
+  .pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .pillrow .p{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:5px 12px;border-radius:20px;font-size:12.5px}
+  .pcard{border:1px solid var(--line);border-radius:13px;padding:18px 20px;border-top:4px solid var(--pc)}
+  .pcard h4{font-size:17px;display:flex;align-items:center;gap:8px}
+  .pcard .verdict{font-style:italic;color:#33414f;background:var(--bg);border-radius:8px;padding:10px 12px;margin:10px 0;font-size:13.5px}
+  .step{display:grid;grid-template-columns:54px 1fr;gap:16px;align-items:start;padding:16px 0;border-bottom:1px dashed var(--line)}
+  .step:last-child{border-bottom:none}
+  .step .num{width:54px;height:54px;border-radius:14px;background:var(--c);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px}
+  .step h4{font-size:16px;margin-bottom:4px}.step .when{font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+  .note{background:var(--bg);border-left:3px solid var(--muted);padding:11px 14px;border-radius:0 8px 8px 0;font-size:13.5px;color:var(--muted);margin-top:12px}
+  footer{color:#7a8694;font-size:12.5px;margin:30px 0;line-height:1.7}
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="home" href="index.html">⌂ Intelligence Report</a>
+  <a class="active" href="summary.html">📊 Strategy</a>
+  <a href="hummingbeing.html">🐦 HummingBeing</a>
+  <a href="bhd-asia.html">🏢 BHD Asia</a>
+  <a href="partage-consulting.html">🦉 Partage</a>
+  <a href="isabelle-linkedin.html">👤 Isabelle</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="label">Total Summary · Real Talk · Digital Marketing Roadmap</div>
+  <h1>The verdict — and how we'd build it right</h1>
+  <p>An honest, no-spin assessment of all four properties through a <strong>digital-marketing lens</strong>, plus a concrete per-property fix list and a phased plan to build the client from <strong>website foundation all the way up to a full social media identity</strong>.</p>
+</div></header>
+
+<div class="wrap">
+
+  <!-- ===================== REAL TALK ===================== -->
+  <div class="realtalk">
+    <h2>🎯 Real talk — the one-paragraph truth</h2>
+    <p>There's a <strong>world-class engine bolted to a bicycle</strong>. The expertise is elite — 27+ years HR, Forbes Coach Council, Brainz Magazine, and a client list most consultancies would kill for (ByteDance, Novartis, VISA, Mastercard, Heineken). But the <strong>digital presence is doing almost none of the selling</strong>. Three separate websites that don't link to each other, <strong>not one of them has a blog</strong>, and the social accounts are either dormant (Peatix: 1 follower), tiny (BHD LinkedIn: 22 followers), or invisible (Instagram/YouTube counts hidden, nothing posted at scale). Someone who Googles this brand today finds <strong>fragments, not a story</strong> — and certainly not proof worthy of the credentials.</p>
+    <p>The good news: this is the <em>easiest</em> kind of client to grow. The authority already exists — it just isn't <strong>packaged, distributed, or converting</strong>. That's exactly the gap a proper website + social build closes.</p>
+    <div class="pillrow">
+      <span class="p">🔴 3 brands, 0 cross-links</span>
+      <span class="p">🔴 0 blogs across all sites</span>
+      <span class="p">🔴 Authority articles never republished</span>
+      <span class="p">🔴 Pricing hidden on 2 of 3 sites</span>
+      <span class="p">🟡 Social = afterthought</span>
+    </div>
+  </div>
+
+  <!-- ===================== SCORECARD ===================== -->
+  <section>
+    <h2>📊 Digital marketing scorecard (real grades)</h2>
+    <p style="color:var(--muted);font-size:14px;margin-bottom:10px">Graded the way a prospect's first impression actually works — website, content/SEO, social presence, conversion path, and brand consistency.</p>
+    <table>
+      <tr><th>Property</th><th>Website</th><th>Content / SEO</th><th>Social</th><th>Conversion</th><th>Overall</th></tr>
+      <tr><td><strong>🐦 HummingBeing</strong></td><td><span class="grade g-b">B−</span></td><td><span class="grade g-f">F</span></td><td><span class="grade g-d">D−</span></td><td><span class="grade g-c">C−</span></td><td><span class="grade g-d">D+</span></td></tr>
+      <tr><td><strong>🏢 BHD Asia</strong></td><td><span class="grade g-b">B</span></td><td><span class="grade g-d">D</span></td><td><span class="grade g-d">D</span></td><td><span class="grade g-c">C</span></td><td><span class="grade g-c">C−</span></td></tr>
+      <tr><td><strong>🦉 Partage</strong></td><td><span class="grade g-d">D</span></td><td><span class="grade g-f">F</span></td><td><span class="grade g-f">F</span></td><td><span class="grade g-c">C+</span></td><td><span class="grade g-d">D</span></td></tr>
+      <tr><td><strong>👤 Isabelle (personal)</strong></td><td>—</td><td><span class="grade g-b">B−</span></td><td><span class="grade g-c">C</span></td><td><span class="grade g-c">C+</span></td><td><span class="grade g-c">C+</span></td></tr>
+    </table>
+    <div class="note"><strong>Authority is the outlier — that's an A−.</strong> Forbes + Brainz + blue-chip clients are genuinely top-tier. Everything else is dragged down by distribution &amp; packaging, not by substance. Fix the plumbing and the grades jump fast.</div>
+  </section>
+
+  <!-- ===================== PER PAGE REAL TALK ===================== -->
+  <section>
+    <h2>🔧 What needs to improve — per property</h2>
+    <div class="grid g2">
+
+      <div class="pcard" style="--pc:#1f9e8f">
+        <h4>🐦 HummingBeing</h4>
+        <div class="verdict">"Beautiful niche, zero distribution. The most <em>shareable</em> product of the three — and the least marketed."</div>
+        <h3>The problems</h3>
+        <ul class="x" style="font-size:13px">
+          <li>No social accounts at all — yet TRE "shaking" is perfect short-form video</li>
+          <li>No blog → invisible for "TRE Singapore", "somatic coaching" searches</li>
+          <li>Pricing fully hidden; only a WhatsApp/form CTA</li>
+          <li>Testimonials are anonymous one-liners — no faces, no names</li>
+        </ul>
+        <h3>The fixes</h3>
+        <ul class="fix" style="font-size:13px">
+          <li>Launch Instagram Reels + TikTok: TRE demos, "what is somatic" explainers</li>
+          <li>Add a blog targeting local + somatic-wellness SEO keywords</li>
+          <li>Google Business Profile for "TRE / somatic Singapore" local search</li>
+          <li>Publish "from $X" pricing + named, photo testimonials</li>
+          <li>Email capture + a simple "intro to TRE" nurture sequence</li>
+        </ul>
+      </div>
+
+      <div class="pcard" style="--pc:#2b5d8c">
+        <h4>🏢 BHD Asia</h4>
+        <div class="verdict">"The credibility flagship — but a 22-follower LinkedIn page badly undersells a firm that coaches ByteDance and VISA."</div>
+        <h3>The problems</h3>
+        <ul class="x" style="font-size:13px">
+          <li>LinkedIn company page: 22 followers, typos in "specialties" (looks sloppy)</li>
+          <li>No case studies despite a killer client list</li>
+          <li>No Insights/blog hub; Forbes/Brainz articles live elsewhere</li>
+          <li>"Events" section but no content/news engine behind it</li>
+        </ul>
+        <h3>The fixes</h3>
+        <ul class="fix" style="font-size:13px">
+          <li>Rebuild the LinkedIn company page + 3×/week cadence &amp; employee advocacy</li>
+          <li>Turn client wins into (anonymised) case studies — proof sells B2B</li>
+          <li>Build an Insights hub; republish every Forbes/Brainz article here (own the authority)</li>
+          <li>Lead magnet: "Leadership Resilience" guide → email list</li>
+          <li>Fix the specialty typos immediately</li>
+        </ul>
+      </div>
+
+      <div class="pcard" style="--pc:#8a5a2b">
+        <h4>🦉 Partage Consulting</h4>
+        <div class="verdict">"The thinnest of all — a near-empty storefront whose newsletter promises articles that don't exist."</div>
+        <h3>The problems</h3>
+        <ul class="x" style="font-size:13px">
+          <li>Effectively a single page; /about, /services, /articles all 404</li>
+          <li>Newsletter sign-up with no published content to deliver</li>
+          <li>Zero social footprint on any platform</li>
+          <li>No testimonials, no case studies, no Japan-market localisation</li>
+        </ul>
+        <h3>The fixes</h3>
+        <ul class="fix" style="font-size:13px">
+          <li>Actually publish the articles — back the newsletter promise</li>
+          <li>Fix the broken pages; build out real services/about pages</li>
+          <li>Localise EN + JP; tap Kyoto expat &amp; ACCJ networks</li>
+          <li>Decide: keep separate, or fold into one brand to stop diluting effort</li>
+        </ul>
+      </div>
+
+      <div class="pcard" style="--pc:#0a66c2">
+        <h4>👤 Isabelle (personal brand)</h4>
+        <div class="verdict">"Your personal LinkedIn is the entire funnel — and it's running on 14–33 reactions a post. The Forbes/Brainz authority is your single biggest unused asset."</div>
+        <h3>The problems</h3>
+        <ul class="x" style="font-size:13px">
+          <li>Engagement modest &amp; inconsistent; lots of reshares vs original</li>
+          <li>YouTube, Instagram, Pinterest exist but barely used</li>
+          <li>Noomii stuck on free plan — bio &amp; reviews hidden</li>
+          <li>No content repurposing pipeline</li>
+        </ul>
+        <h3>The fixes</h3>
+        <ul class="fix" style="font-size:13px">
+          <li>Fixed posting cadence + 4 content pillars (TRE · leadership · resilience · founder story)</li>
+          <li>Repurpose each Forbes/Brainz piece → LinkedIn post → Reel → YouTube short</li>
+          <li>Launch a LinkedIn newsletter (owned audience, native reach)</li>
+          <li>Upgrade Noomii + actively collect written reviews</li>
+          <li>One link-hub bringing all 3 brands + booking together</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== BUILD PLAN ===================== -->
+  <section>
+    <h2>🚀 The build plan — from website up to social media identity</h2>
+    <p style="color:var(--muted);font-size:14px;margin-bottom:6px">How we'd take this client from "fragmented &amp; underselling" to "one coherent brand that converts." Foundation first, social identity layered on top of a site that's actually ready to receive the traffic.</p>
+
+    <div class="step"><div class="num">1</div><div>
+      <div class="when">Phase 1 · Weeks 1–4 · Foundation</div>
+      <h4>Brand architecture &amp; website rebuild</h4>
+      <p style="font-size:13.5px">Decide the structure (one umbrella brand, or a clean hub-and-spoke with the personal brand at the centre). Rebuild on a fast, SEO-ready stack with clear CTAs, transparent pricing, named testimonials, client logos, and analytics + pixels wired in from day one. <strong>Cross-link all properties.</strong></p>
+    </div></div>
+
+    <div class="step"><div class="num">2</div><div>
+      <div class="when">Phase 2 · Weeks 3–8 · Content engine</div>
+      <h4>Own the authority you've already earned</h4>
+      <p style="font-size:13.5px">Stand up a blog/insights hub on each site. Republish every Forbes &amp; Brainz article (with canonical tags). Build 2–3 lead magnets (resilience guide, TRE intro, leadership checklist) and an email automation that nurtures to a booking. This is what makes SEO and social actually convert.</p>
+    </div></div>
+
+    <div class="step"><div class="num">3</div><div>
+      <div class="when">Phase 3 · Weeks 5–12 · Social media identity</div>
+      <h4>Build the brand handles &amp; a real posting machine</h4>
+      <p style="font-size:13.5px">Secure &amp; design consistent brand profiles (LinkedIn company, Instagram, YouTube, TikTok). Create a visual identity kit + templates. Ship a content calendar driven by short-form video (TRE demos convert), founder thought-leadership, and client-proof. Turn the personal LinkedIn into the amplification hub feeding all three brands.</p>
+    </div></div>
+
+    <div class="step"><div class="num">4</div><div>
+      <div class="when">Phase 4 · Ongoing · Amplify &amp; measure</div>
+      <h4>Paid retargeting + monthly reporting</h4>
+      <p style="font-size:13.5px">Layer in light paid retargeting once organic + content are live. Track the metrics that matter — followers, engagement rate, email list growth, qualified leads, bookings, cost-per-lead — in a monthly dashboard, and double down on what moves revenue.</p>
+    </div></div>
+  </section>
+
+  <section>
+    <h2>✅ If we only did 5 things first</h2>
+    <ul class="tick" style="font-size:14px">
+      <li><strong>Cross-link the three sites &amp; the personal profile</strong> — stop leaking authority between brands (1 day).</li>
+      <li><strong>Republish the Forbes/Brainz articles</strong> onto owned blogs — instant content + SEO + credibility.</li>
+      <li><strong>Fix BHD's LinkedIn page</strong> (typos, banner, cadence) — it's the highest-credibility, lowest-effort win.</li>
+      <li><strong>Launch one short-form video channel</strong> (TRE on Reels/TikTok) — the product is inherently shareable.</li>
+      <li><strong>Publish pricing + named testimonials</strong> — remove the two biggest conversion blockers.</li>
+    </ul>
+  </section>
+
+  <footer>Compiled 4 June 2026 with Opus 4.8. Grades are an editorial digital-marketing assessment based on the verified findings in the per-property pages; all underlying social metrics are labelled verified / gated / not-found on those pages. This is strategic opinion, not an audited financial or guaranteed-outcome statement.</footer>
+</div>
+</body>
+</html>
